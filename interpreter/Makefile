@@ -44,7 +44,7 @@ export INCLUDE := $(foreach dir,$(LIBDIRS),-I$(dir)/include) \
 CFLAGS   += $(INCLUDE) -DARM11 -D_3DS -DWITH_THREAD
 
 ifeq ($(strip $(PYVERSION)),)
-	PYVERSION := 3.6.9
+	PYVERSION := 3.8.6
 endif
 
 ANAME     := libpython$(shell echo $(PYVERSION) | cut -b 1-3).a
